@@ -6,16 +6,13 @@ const Todos = () => {
 
   const handleChange = (e) => {
     setTodo(e.target.value);
-    console.log(e.target.value);
   };
 
   return (
-    
-      <Container>
-          <input type="text" onChange={handleChange} />
-          <button></button>
-      </Container>
-    
+    <Container>
+      <input type="text" onChange={handleChange} value={todo} />
+      <button>Add</button>
+    </Container>
   );
 };
 
